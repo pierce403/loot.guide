@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loot.guide - Break the Cycle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid #0f0;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        .tagline {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #0d0;
+            margin-bottom: 10px;
+        }
+
+        .site-title {
+            font-size: 1rem;
+            color: #0a0;
+            margin-top: 10px;
+        }
+
+        .concept {
+            background-color: #001100;
+            border: 1px solid #0f0;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .concept h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #0f0;
+        }
+
+        .concept p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #0d0;
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .pillar {
+            background-color: #001100;
+            border: 2px solid #0f0;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .pillar:hover {
+            background-color: #002200;
+            box-shadow: 0 0 20px #0f0;
+        }
+
+        .pillar h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+        }
+
+        .pillar p {
+            font-size: 0.95rem;
+            color: #0d0;
+            line-height: 1.6;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            color: #0f0;
+            border: 3px solid #0f0;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 2px;
+        }
+
+        .cta-button:hover {
+            background-color: #0f0;
+            color: #000;
+            box-shadow: 0 0 30px #0f0;
+        }
+
+        footer {
+            border-top: 2px solid #0f0;
+            margin-top: 60px;
+            padding-top: 20px;
+            text-align: center;
+            color: #0a0;
+            font-size: 0.9rem;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .hero {
+                font-size: 1.2rem;
+            }
+
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">ATTRACT → EXTRACT → COLLAPSE. BREAK THE CYCLE.</div>
+        <div class="tagline">A survival manual for the subsidized web.</div>
+        <div class="site-title">$ loot.guide<span class="blink">_</span></div>
+    </header>
+
+    <section class="concept">
+        <h2>&gt; CORE CONCEPT</h2>
+        <p>
+            Use VC cash to fund your exit. Leverage free tiers, retain data sovereignty via SSI, 
+            and scoot before enshittification begins. The venture-backed platforms want to lock you in, 
+            extract value, then collapse. Don't be there when it happens. Take what you need, 
+            own what matters, and move to sustainable ground.
+        </p>
+    </section>
+
+    <section class="pillars">
+        <div class="pillar">
+            <h3>&gt; LOOT</h3>
+            <p>Take the subsidy. Use generous free tiers, credits, and venture capital subsidies to build your foundation. Extract value while they're still burning cash to gain market share.</p>
+        </div>
+
+        <div class="pillar">
+            <h3>&gt; ANCHOR</h3>
+            <p>Own your ID/data. Implement Self-Sovereign Identity (SSI). Keep your data portable and under your control. Never let platforms become the source of truth for your identity.</p>
+        </div>
+
+        <div class="pillar">
+            <h3>&gt; SCOOT</h3>
+            <p>Move to sustainable ground. When the enshittification begins, you're already gone. Migrate to open protocols, self-hosted solutions, or the next subsidized platform.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="manifesto.html" class="cta-button">OPEN MANIFESTO</a>
+    </section>
+
+    <footer>
+        <p>Break the cycle. Loot and scoot.</p>
+        <p>© 2025 loot.guide - Fight enshittification with strategy</p>
+    </footer>
+</body>
+</html>
