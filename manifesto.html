@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loot and Scoot Manifesto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto 80px auto;
+        }
+
+        header {
+            border-bottom: 2px solid #0f0;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            letter-spacing: 4px;
+            text-shadow: 0 0 20px #0f0;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #0d0;
+        }
+
+        nav {
+            margin-bottom: 40px;
+            border: 1px solid #0f0;
+            padding: 20px;
+            background-color: #001100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #0f0;
+            text-decoration: none;
+            border: 1px solid #0f0;
+            padding: 10px 18px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0f0;
+            color: #000;
+            box-shadow: 0 0 20px #0f0;
+        }
+
+        section {
+            margin-bottom: 50px;
+            background-color: #001100;
+            border: 1px solid #0f0;
+            padding: 30px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #0f0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        section p,
+        section li {
+            color: #0d0;
+            font-size: 1rem;
+        }
+
+        ul.checklist {
+            list-style: none;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        ul.checklist li {
+            border: 1px solid #0f0;
+            padding: 15px;
+            background-color: #000b00;
+        }
+
+        ul.checklist li::before {
+            content: "[✔] ";
+            color: #0f0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .card {
+            border: 1px solid #0f0;
+            background-color: #000b00;
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        footer {
+            text-align: center;
+            color: #0a0;
+            border-top: 2px solid #0f0;
+            padding-top: 20px;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0f0;
+        }
+
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+
+        blockquote {
+            border-left: 3px solid #0f0;
+            padding-left: 15px;
+            color: #0d0;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">&larr; Return to loot.guide</a>
+    <header>
+        <h1>Loot and Scoot Manifesto</h1>
+        <p>ATTRACT → EXTRACT → COLLAPSE. We surf the enshittification tide, fill our packs with liberated value, and vanish before the empire notices.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#skeptics">Skeptic's Disclaimer</a></li>
+            <li><a href="#premise">Premise</a></li>
+            <li><a href="#cycle">The Cycle</a></li>
+            <li><a href="#principles">Operating Principles</a></li>
+            <li><a href="#playbook">Playbook</a></li>
+            <li><a href="#toolkit">Toolkit</a></li>
+            <li><a href="#regenerative">Regenerative Endgame</a></li>
+            <li><a href="#signals">Exit Signals</a></li>
+            <li><a href="#pledge">The Pledge</a></li>
+        </ul>
+    </nav>
+
+    <section id="skeptics">
+        <h2>&gt; Skeptic's Disclaimer</h2>
+        <p>
+            We won't insult you with hopium. Ninety-nine percent of "Web3" is a carnival of speculative grift, VC cosplay, and
+            exit-liquidity musicals. We keep the one percent that works—the math, the decentralized identifiers, the
+            self-sovereign identity rails—because those are the only real lockpicks against Big Tech's biometric prisons.
+            Everything else can stay burning on the hype barge while we slip through the service entrance.
+        </p>
+    </section>
+
+    <section id="premise">
+        <h2>&gt; Premise</h2>
+        <p>
+            Empires bait the trap with velvet onboarding. Generous credits, concierge engineers, friendly Slack emojis. Then
+            the screws turn: pricing spikes, APIs vanish behind paywalls, terms mutate into shackles. Loot and Scoot accepts
+            the rot as physics. We study their greed, ride the subsidy, siphon the value, and ghost before the clamps close.
+            This isn't paranoia; it's operational hygiene.
+        </p>
+    </section>
+
+    <section id="cycle">
+        <h2>&gt; The Enshittification Cycle</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Attract</h3>
+                <p>VC firehose turns on. Free credits rain down, APIs purr, community managers DM you hearts. You are not the
+                customer—you are the lure they dangle for Wall Street slides.</p>
+            </div>
+            <div class="card">
+                <h3>2. Extract</h3>
+                <p>Growth plateaus, investors sweat. Suddenly "usage-based pricing" replaces your freedom, exports break, and
+                support queues ask for your credit card before your name. Congratulations: you are the product.</p>
+            </div>
+            <div class="card">
+                <h3>3. Collapse</h3>
+                <p>With trust gone and margins starved, the empire cannibalizes itself. Communities fork, regulators sniff
+                around, executives "pursue new challenges." The platform withers, but your convoy already hit the safehouse.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="principles">
+        <h2>&gt; Operating Principles</h2>
+        <ul class="checklist">
+            <li>Exploit incentives, not people. Take the subsidy, leave their users better than you found them.</li>
+            <li>Autonomy first. Identity, data, and artifacts stay portable from day zero—no sentimental attachments.</li>
+            <li>Prefer protocols to platforms. We ride standards, open formats, reversible integrations like stolen bikes.</li>
+            <li>Automate the exit. Backups, migration scripts, contingency drills—rehearsed like a favorite riff.</li>
+            <li>Follow the money. Funding rounds, leadership churn, desperate pricing tweaks—all smell like incoming rot.</li>
+            <li>Share the maps. Every loophole documented is another crew that escapes before the collapse.</li>
+        </ul>
+    </section>
+
+    <section id="playbook">
+        <h2>&gt; The Loot &amp; Scoot Playbook</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Recon</h3>
+                <p>Profile the target like a heist crew. Who owns it, who funds it, which lawyers wrote the terms? Mark the escape
+                hatches on day one.</p>
+            </div>
+            <div class="card">
+                <h3>Exploit</h3>
+                <p>Max out the free tiers, pilot credits, concierge onboarding. Record the ritual so the next operator doesn't
+                trigger the tripwire.</p>
+            </div>
+            <div class="card">
+                <h3>Fortify</h3>
+                <p>Mirror everything to neutral ground. SSI wallets, hardware keys, encrypted stashes. Resilience is a muscle, so
+                train it.</p>
+            </div>
+            <div class="card">
+                <h3>Pivot</h3>
+                <p>Run exit drills like fire alarms. Fail over to your shadow stack, tally switching costs, and keep shaving them
+                down.</p>
+            </div>
+            <div class="card">
+                <h3>Broadcast</h3>
+                <p>Publish the score. Post-mortems, migration kits, redacted war stories. Your escape velocity fuels the next
+                rebellion.</p>
+            </div>
+            <div class="card">
+                <h3>Judo Move</h3>
+                <p>Use their generous free-tier bandwidth to serve encrypted cargo only your crew can unlock. They bankroll the
+                getaway car; you own the loot.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="toolkit">
+        <h2>&gt; Preferred Toolkit</h2>
+        <p>
+            Web3 is not a religion; it's the hotwired ride parked out back. We standardize on DIDs, portable data formats, and
+            verifiable credentials because they keep the exit lane clear and the loot in our pockets. We are not here to homestead
+            inside another cult chain—we're using cryptographic getaway cars to move stolen sunlight into community vaults.
+        </p>
+        <div class="grid">
+            <div class="card">
+                <h3>Identity</h3>
+                <p>DIDs, verifiable credentials, passkey-capable auth. Run your own resolver or federate with co-ops who answer to users.</p>
+            </div>
+            <div class="card">
+                <h3>Data</h3>
+                <p>Immutable object storage, IPFS pinning, end-to-end encrypted sync. Schemas stay portable, exports stay one command away.</p>
+            </div>
+            <div class="card">
+                <h3>Comms</h3>
+                <p>Matrix, ActivityPub, and email on your own domain. Bridges and bots live on your infra, not theirs.</p>
+            </div>
+            <div class="card">
+                <h3>Compute</h3>
+                <p>Containerized workloads, Terraform state in your S3, CI/CD mirrors on standby. Every workload should ghost to a new cloud overnight.</p>
+            </div>
+            <div class="card">
+                <h3>Finance</h3>
+                <p>Multi-bank treasuries, API cash sweeps, exit-friendly credit lines. Liquidity stays nimble and reversible on command.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="regenerative">
+        <h2>&gt; Regenerative Endgame</h2>
+        <p>
+            Looting is the tactic; regeneration is the mission. We funnel their bloated marketing spend and wasted VC billions
+            into public goods, worker-owned infrastructure, and community-run commons. Success is measured in mutual aid funds
+            replenished, open tools maintained, and neighborhoods that no longer need permission slips to thrive.
+        </p>
+    </section>
+
+    <section id="signals">
+        <h2>&gt; Exit Signals</h2>
+        <blockquote>
+            "If you feel friction, the rot already started. Trust your sensors and prep the getaway."
+        </blockquote>
+        <ul class="checklist">
+            <li>Mandatory bundling of unrelated paid tiers—classic lock-in squeeze.</li>
+            <li>Support lines slow-walking you unless you flash a premium badge.</li>
+            <li>API deprecations announced without escape tooling or even a mea culpa.</li>
+            <li>C-suite musical chairs or activist investors promising "efficiency."</li>
+            <li>Usage limits shrinking while sales screams "upgrade or else."</li>
+            <li>Roadmaps pivot from community features to surveillance, ads, and compliance theater.</li>
+        </ul>
+    </section>
+
+    <section id="pledge">
+        <h2>&gt; The Pledge</h2>
+        <p>
+            We swear to stay light on our feet, allergic to monopolies, and obsessive about collective agency. We build with
+            reversible moves, refuse to confuse convenience with captivity, and keep the ladder lowered for anyone still inside
+            the cage.
+        </p>
+        <p>
+            When the cycle resets, we are already moving: loot ethically, scoot decisively, and seed the next network with
+            better norms than the last empire ever allowed.
+        </p>
+    </section>
+
+    <footer>
+        <p>$ exit --before="enshittification"</p>
+        <p>© 2025 loot.guide - Loot. Scoot. Repeat.</p>
+    </footer>
+</body>
+</html>
